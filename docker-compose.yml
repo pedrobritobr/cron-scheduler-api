@@ -1,0 +1,12 @@
+services:
+  cron-scheduler-api:
+    build:
+      context: .
+    ports:
+      - "4000:4000"
+    networks:
+      - app-network
+
+networks:
+  app-network:
+    driver: bridge
